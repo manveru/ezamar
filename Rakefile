@@ -64,8 +64,6 @@ GEMSPEC = Gem::Specification.new{|s|
   s.files        = PROJECT_FILES
   s.has_rdoc     = true
   s.require_path = "lib"
-  s.bindir       = "bin"
-  s.executables  = ["Ezamar"]
   
   s.rubyforge_project = "ezamar"
   

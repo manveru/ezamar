@@ -7,11 +7,9 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Fellinger"]
   s.date = %q{2009-06-04}
-  s.default_executable = %q{Ezamar}
   s.description = %q{A light-weight and simple templating engine for Ruby.}
   s.email = %q{manveru@rubyists.com}
-  s.executables = ["Ezamar"]
-  s.files = ["README", "README.md", "Rakefile", "lib/ezamar.rb", "lib/ezamar/element.rb", "lib/ezamar/engine.rb", "lib/ezamar/morpher.rb", "lib/ezamar/render_partial.rb", "lib/ezamar/version.rb", "misc/textpow.syntax", "spec/helper.rb", "tasks/authors.rake", "tasks/bacon.rake", "tasks/changelog.rake", "tasks/copyright.rake", "tasks/gem.rake", "tasks/gem_installer.rake", "tasks/install_dependencies.rake", "tasks/manifest.rake", "tasks/rcov.rake", "tasks/release.rake", "tasks/reversion.rake", "tasks/setup.rake", "tasks/yard.rake", "bin/Ezamar"]
+  s.files = ["AUTHORS", "CHANGELOG", "MANIFEST", "README", "README.md", "Rakefile", "ezamar.gemspec", "lib/ezamar.rb", "lib/ezamar/element.rb", "lib/ezamar/engine.rb", "lib/ezamar/morpher.rb", "lib/ezamar/render_partial.rb", "lib/ezamar/version.rb", "misc/textpow.syntax", "spec/helper.rb", "tasks/authors.rake", "tasks/bacon.rake", "tasks/changelog.rake", "tasks/copyright.rake", "tasks/gem.rake", "tasks/gem_installer.rake", "tasks/install_dependencies.rake", "tasks/manifest.rake", "tasks/rcov.rake", "tasks/release.rake", "tasks/reversion.rake", "tasks/setup.rake", "tasks/yard.rake"]
   s.homepage = %q{http://github.com/manveru/ezamar}
   s.post_install_message = %q{============================================================
 

@@ -1,6 +1,10 @@
+AUTHORS
+CHANGELOG
+MANIFEST
 README
 README.md
 Rakefile
+ezamar.gemspec
 lib/ezamar.rb
 lib/ezamar/element.rb
 lib/ezamar/engine.rb
@@ -22,4 +26,3 @@ tasks/release.rake
 tasks/reversion.rake
 tasks/setup.rake
 tasks/yard.rake
-bin/Ezamar

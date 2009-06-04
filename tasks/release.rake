@@ -23,28 +23,28 @@ INSTRUCTIONS
   # TODO: Not tested
   desc 'Display instructions to release on rubyforge'
   task :rubyforge => [:reversion, :gemspec, :package] do
-    name, version = GEMSPEC.name, GEMSPEC.version
+    name, version = GEMSPEC.name, GEMSPEC.version.to_s
 
     puts <<INSTRUCTIONS
 To publish to rubyforge do following:
 
 rubyforge login
-rubyforge add_release #{name} #{name} '#{version}' pkg/#{name}-#{version}.gem
+rubyforge add_release #{name} #{name} #{version.dump} pkg/#{name}-#{version}.gem
 
 After you have done these steps, see:
 
-rake release:rubyforge_archives
+VERSION=#{version.dump} rake release:rubyforge_archives
 
 INSTRUCTIONS
   end
 
   desc 'Display instructions to add archives after release:rubyforge'
   task :rubyforge_archives do
-    name, version = GEMSPEC.name, GEMSPEC.version
+    name, version = GEMSPEC.name, GEMSPEC.version.to_s
     puts "Adding archives for distro packagers is:", ""
 
     Dir["pkg/#{name}-#{version}.{tgz,zip}"].each do |file|
-      puts "rubyforge add_file #{name} #{name} '#{version}' '#{file}'"
+      puts "rubyforge add_file %s %s %p %p" % [name, name, version, file]
     end
 
     puts
